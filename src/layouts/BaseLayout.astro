@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-import { SITE_NAME } from '../data/constants';
+import "../styles/global.css";
+import { SITE_NAME } from "../data/constants";
 
 interface Props {
   title: string;
@@ -8,8 +8,10 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const pageTitle = title ?? `${SITE_NAME} - Especialistas en odontología y urgencias dentales.`;
-const pageDescription = description ?? "Los mejores especialistas dentales a tu alcance.";
+const pageTitle =
+  title ?? `${SITE_NAME} - Especialistas en odontología y urgencias dentales.`;
+const pageDescription =
+  description ?? "Los mejores especialistas dentales a tu alcance.";
 ---
 
 <html lang="es-ES">
@@ -29,10 +31,8 @@ const pageDescription = description ?? "Los mejores especialistas dentales a tu 
   </head>
 
   <body class="min-h-screen bg-gray-100 text-gray-900 flex flex-col">
-
     <main class="flex-1 w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
       <slot />
     </main>
-
   </body>
 </html>
