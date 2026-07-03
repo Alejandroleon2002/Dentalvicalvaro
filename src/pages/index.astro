@@ -1,7 +1,7 @@
 ---
 import { SITE_NAME } from '../data/constants';
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/BaseLayout.astro';
+import Promotion from './promociones.astro';
 
 const title = `${SITE_NAME} - Especialistas en odontología y urgencias dentales.`;
 const description = "Los mejores especialistas dentales a tu alcance.";
@@ -9,8 +9,6 @@ const description = "Los mejores especialistas dentales a tu alcance.";
 
 <Layout title={title} description={description}>
 
-	<h1 class="text-center bg-amber-500">Página index de prueba, con componente de prueba</h1>
-	<h2 class="text-center bg-(--bg-corporate)">Borrar los dos</h2>
-	<Welcome />
+	<Promotion />
 
 </Layout>
