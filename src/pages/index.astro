@@ -1,14 +1,13 @@
 ---
-import { SITE_NAME } from "../data/constants";
-import Layout from "../layouts/BaseLayout.astro";
-import Promotion from "./promociones.astro";
-import Sticky from "../components/sticky/Sticky.astro";
+import { SITE_NAME } from '../data/constants';
+import Layout from '../layouts/BaseLayout.astro';
+import Promotions from '../components/promotions/Promotion.astro';
 
 const title = `${SITE_NAME} - Especialistas en odontología y urgencias dentales.`;
 const description = "Los mejores especialistas dentales a tu alcance.";
 ---
 
 <Layout title={title} description={description}>
-	<Sticky />
-	<Promotion />
+	<Promotions />
+
 </Layout>
