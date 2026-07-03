@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { SITE_NAME } from '../data/constants';
+import Sticky from '../components/sticky/Sticky.astro';
 
 interface Props {
   title: string;
@@ -29,6 +30,8 @@ const pageDescription = description ?? "Los mejores especialistas dentales a tu 
   </head>
 
   <body class="min-h-screen bg-gray-100 text-gray-900 flex flex-col">
+
+    <Sticky />
 
     <main class="flex-1 w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
       <slot />

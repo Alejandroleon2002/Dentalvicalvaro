@@ -1,0 +1,20 @@
+---
+import HeaderComponent from "../common/Header.astro";
+import { Image } from 'astro:assets';
+import img from '../../assets/astro.svg';
+
+const title = "¡ Mes del implante !";
+const subtitle = "Promoción válida del 1 al 31 de octubre 2024";
+---
+
+<HeaderComponent title={title} subtitle={subtitle} />
+
+<div>
+    <Image
+        src={img}
+        alt="Texto"
+        widths={[320, 640, 960]}
+        sizes="(max-width: 768px) 100vw, 640px"
+        class="w-full h-auto rounded-lg"
+    />
+</div>
