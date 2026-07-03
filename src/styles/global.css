@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@layer base {
+
+    :root {
+        --bg-corporate: #59abe3;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply antialiased text-gray-900 bg-white font-sans leading-relaxed;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}

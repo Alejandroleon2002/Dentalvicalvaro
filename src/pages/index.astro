@@ -1,11 +1,15 @@
 ---
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/BaseLayout.astro';
+
+const title = "Clínica dental Vicálvaro - Especialistas en odontología y urgencias dentales.";
+const description = "Los mejores especialistas dentales a tu alcance.";
 ---
 
-<Layout>
-	<!-- STICKY -->
-	<!-- HERO -->
-	<!-- BANNER -->
+<Layout title={title} description={description}>
+
+	<h1 class="text-center bg-amber-500">Página index de prueba, con componente de prueba</h1>
+	<h2 class="text-center bg-(--bg-corporate)">Borrar los dos</h2>
 	<Welcome />
+
 </Layout>
